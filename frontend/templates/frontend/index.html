@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    {% load static %}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Django REST with React</title>
+</head>
+<body>
+<header>
+    <div class="header-title">
+        <h1>Шифратор онлайн</h1>
+    </div>
+</header>
+<main class="flex-container">
+    <article class="description">
+        <h2>О программе</h2>
+        <p>
+            На нашем сайте вы можете расшифровать или дешифровать свой текст одним из трех шифров: шифр Цезаря, шифр Виженера и сеть Фейстеля.
+        </p>
+    </article>
+    <div id="app">
+        <!-- React will load here -->
+    </div>
+</main>
+<footer>
+<p class="footer-caption">Томск, 2021</p>
+</footer>
+<script src="{% static "frontend/main.js" %}"></script>
+</body>
+</html>
